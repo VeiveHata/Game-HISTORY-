@@ -1,0 +1,193 @@
+
+@font-face {
+    font-family: "Hand"; /* Гарнитура шрифта */
+    src: url(../fonts/EraserRegular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    position: relative;
+    font-family: 'Hand', 'Arial', sans-serif;
+}
+
+h1 {
+	text-align : center;
+}
+
+.load {
+	width: 40%;
+	height: 40px;
+	margin: 0 auto;
+	color: white;
+	font-size: 30px;
+	text-align: center;	
+}
+
+.menu {
+	padding: 5px;
+	width: 1100px;
+	height: auto;
+	color: white;
+	margin: 0 auto;
+	font-size: 30px;
+}
+
+
+
+.container {
+    margin: 5% auto;
+    width: 1000px;
+    height: 600px;
+    border: 2px solid black;
+    background: url('../images/space.jpg') 0 0 repeat;
+}
+
+.buttons {
+	position: absolute;
+	top: 6%;
+    left: 3%; 
+    width: 110px;   
+}
+
+.restart {
+	padding: 0;
+	width: 100%;
+    height: 110px;    
+    outline: 0;
+    background-color: black;
+    border: 0;
+    color: white;
+	background-image: url('../images/restart.png');
+	border-radius: 65px;
+	margin-bottom: 20px;
+}
+
+.restart:hover {
+	box-shadow: inset 0 0 78px #404040, 0 0 20px white;
+    color: grey;  
+}
+
+.restart:active {
+	box-shadow: 0 0 32px white;
+	color: white;
+}
+
+.pause {	
+	width: 100%;
+	height: 30px;
+	outline: 0;
+	background-image: url('../images/pauseButton.png');
+	background-color: black;
+	border: 0;
+    color: white;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.pause:hover {
+	box-shadow: inset 0 0 78px #404040, 0 0 20px white;
+    color: grey;  
+}
+
+.pause:active {
+	box-shadow: 0 0 32px white;
+	color: white;
+}
+
+.continue {
+	width: 100%;
+	height: 30px;
+	outline: 0;
+	background-image: url('../images/pauseButton.png');
+	background-color: black;
+	border: 0;
+    color: white;
+    padding: 0;
+}
+
+.continue:hover {
+	box-shadow: inset 0 0 78px #404040, 0 0 20px white;
+    color: grey;  
+}
+
+.continue:active {
+	box-shadow: 0 0 32px white;
+	color: white;
+}
+
+
+.pointsArea {
+	position: absolute;
+	right: 5%;
+	top: 14%;
+	width: 200px;
+	height: 100px;
+    background-image: url('../images/pointsArea.png');    
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 27px;    
+    font-size: 20px;
+    color: black;
+
+}
+
+.levelNumber {
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: white;
+}
+
+.finish {
+	display: block;
+	width: 600px;
+	height: 352px;
+	background-image: url('../images/frame.png');
+	color: black;
+	font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50%;
+    position: absolute;
+    top: 38%;
+    left: 32%;
+    box-sizing: border-box;
+    padding: 127px 71px 96px 73px;
+    margin: 0;
+}
+
+
+
+.percentage {
+	font-style: italic;
+}
+
+.years {
+	font-style: italic;
+}
+
+.arrow {	
+    display: block;
+    width: 58px;
+    margin: 0 auto;
+}
+
+.arrow:hover {
+	color: grey;
+}
+
+
+.hidden {
+	display: none;
+}

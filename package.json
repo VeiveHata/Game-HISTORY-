@@ -1,0 +1,21 @@
+{
+  "name": "atom_catcher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve ./public",
+    "build": "babel native_script -d script --presets es2015",
+    "watch": "babel native_script -d script --presets es2015 -w"
+  },
+  "author": "Chamlay Olya",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^6.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "description": ""
+}

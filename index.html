@@ -1,74 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content=" about Cameron ">
-    <meta name="author" content=" Cameron, pizza ">
-    <meta http-equiv="Cache-Control" content="max-age=2629000" />
+<head>
+	<meta charset="UTF-8">
+	<title>december game</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
 
-    <title>Cameron Pittman: Portfolio</title>
+<div id="load" class="load"></div>
 
-    
+<div class="levelNumber" id="levelNumber"></div>
+	
+<div id="pointsArea" class="hidden"></div>
 
-    <link href="css/print.css" rel="stylesheet" media="print">
-    <script async>
+<div id="menu" class="hidden">
 
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
+	<h1>Star Creator</h1>
+	<h3>You may collect all elements falling down.</h3>
+	<p>BUT... length of star life depends on percentage of Hydrogenium in it.</p>
+	<p>Good Luck</p>
 
-      // Optional TODO: replace with your Google Analytics profile ID.
-      ga('create', 'UA-XXXX-Y');
-      ga('send', 'pageview');
 
-    </script>
-    <script async src="http://www.google-analytics.com/analytics.js" ></script>
-    <script async src="js/perfmatters.js"></script>
-    <style>.hero,footer{border-top:1px solid #ccc}footer span,li p{font-style:italic}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v14/u-WUoqrET9fUeobQW7jkRRJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');unicode-range:U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(https://fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215}html{font-size:100%;overflow-y:scroll;-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}body{margin:0;font-size:14px;line-height:1.61;font-weight:400;background:#fff}b,header p,strong{font-weight:700}body,button,input,select,textarea{font-family:'Open Sans',sans-serif;color:#333}a{color:#12C}a:visited{color:#61C}a:focus{outline:dotted thin}a:active,a:hover{color:#c00;outline:0}code,pre{font-family:monospace,monospace;font-size:1em}ol,ul{margin:1em 0;padding:0 0 0 20px}img{border:0;max-width:100%}.container,footer,header{max-width:45em;margin:0 auto}header{padding:0 .5em;color:#C90B0B}header img{border-radius:40px;float:left}header p{font-size:1.5em;padding-left:4em}header p span{font-size:.8em;font-weight:400}.hero{padding:2em;background-color:#f8f8f8;font-size:1.2em;border-bottom:1px solid #ccc}.content{padding:1em}.content li{list-style-type:none;font-size:1.1em}li img{float:left;padding-right:1em}li p{font-size:.9em}footer{padding:0 .5em}footer span{float:right}@media only screen and (max-width:480px){body{font-size:12px}header p{padding-left:4.5em}}
-    </style>
-  </head>
+</div>
 
-  <body>
-    <header>
-      <a href="/"><img src="img/profilepic.jpg"></a>
-      <a href="/"><img src="img/IMG_20170825_104652.jpg"></a>
-      <p>Cameron Pittman and Olya Chamlay<br><span>Course Developer and ammm someone</span></p>
-    </header>
+<div id="container" class="hidden"></div>
 
-    <div class="container">
-      <div class="hero">
-        <strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com<br>Contact me not:<s> vacyakaktyc@gmail.com</s>
-      </div>
+<div id="finish" class="hidden"> 	
+	<p>The percentage of Hydrogenium in your star is <span id="percentage" class="percentage"></span> %</p>
+	<p>Your star will live for <span id="years" class="years"></span> years</p>
+	<p class="arrow" id="next">next</p>
+		
+</div>
 
-      <div class="content">
-        <ul>
-            <li>
-            <img src="https://lh4.ggpht.com/kJEnfqhPvtm4m3EneSZ4fWYGS8lW4YNhEjk6zPkyrQaBUHc-2Y_ElDic99NHI0h-UBLXVbRCjFybFvrWxdk=s100" >
-               <a href="project-2048.html"  >Build Your Own 2048!</a>
-              <p>I made my own version of 2048. How cool is that!?</p>
-            </li>
-              <li>
-            <img src="https://lh6.ggpht.com/f_0W8h__3G99CWTjnMjD8BUKm7yp2-wJyApLtTwFoFtlal2ULf_JgHIsOQq2NiYfKOdMlXlMHDKNo5XVZLs=s100">
-               <a href="project-webperf.html">Website Performance Optimization</a>
-              <p>Hey... this class looks familiar.</p>
-            </li>
-            <li>
-            <img src="https://lh5.ggpht.com/IKdCmTWn8a2nMhlwMYzryvzRN5CUZAOBr4tDrEAbszV7TIFe9pRAInA4kkYcgTXwrifJsBEsq1agTueuu-g=s100">
-               <a href="project-mobile.html">Mobile Web Development</a>
-              <p>Making mobile apps isn't so hard after all.</p>
-            </li>
-          <li>
-            <img style="width: 100px;" src="views/images/pizzeria.jpg">
-            <a href="views/pizza.html">Cam's Pizzeria</a>
-            <p>Who wants a performant pizza?</p>
-          </li>
-        </ul>
-      </div>
+<nav class="buttons">
 
-      <footer>
-        <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+	<input type="button" name="restart" id="restart" class="restart" value="New Game">
+	<input type="button" name="pause" id="pause" class="pause" value="Pause">
+	<input type="button" name="continue" id="continue" class="continue" value="Continue">
 
-      </footer>
-    </div>
-  </body>
+</nav>
+
+
+	<!-- <script type="text/javascript" src="http://code.jquery.com/j query-2.1.0.js"></script>-->
+	
+	<script src="https://cdn.rawgit.com/konvajs/konva/1.7.6/konva.min.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+</body>
 </html>
